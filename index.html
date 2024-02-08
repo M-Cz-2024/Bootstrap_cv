@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+
+
+
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Protest+Riot&family=Protest+Strike&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <footer>
+    </footer>
+    
+    <!-- HOME -->
+    <section id="home">
+        
+        <section class="form_prihlas">
+            <div class="container "> <br>
+                <div class="nazev text-center   text-light">
+                    <h2 class="therm">Thermal Hotel</h2>
+                    <h3>HOTEL</h3>
+                </div>
+                
+                <div class="row d-flex justify-content-center   ">
+                    <div class="col-12 col-md-9 col-lg-7 text-center ">
+                        
+                        <form action="" class="mt-2">
+                            <h2 class="mb-2 text-primary">Quick Booking</h2>
+                            <div class="mb-2">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control bg-primary" id="name" placeholder="Johny">
+                            </div>
+                            <div class="mb-2">
+                                <label for="surname" class="form-label">Surname:</label>
+                                <input type="text" class="form-control bg-primary" id="surname" placeholder="English">
+                            </div>
+                            <div class="mb-2">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control bg-primary" id="email" placeholder="johnyenglish@example.com">
+                            </div>
+                            <div class="mb-2">
+                                <label for="phone" class="form-label">Phone number:<span class="text-secondary">(incl.international dial-up preference)</span></label>
+                                <input type="text" class="form-control bg-primary" id="phone" placeholder="+421123456789">
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-12 col-sm-4">
+                                    <div class="mb-3">
+                                        <label for="guest" class="form-label">Number of guests:</label>
+                                        <input type="text" class="form-control bg-primary" id="guest" placeholder="1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="mb-2">
+                                        <label for="arrival" class="form-label">Date of arrival:</label>
+                                        <input type="date" class="form-control bg-primary" id="arrival" placeholder="dd.mm.rrrr">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="mb-2">
+                                        <label for="departure" class="form-label">Date of departure:</label>
+                                        <input type="date" class="form-control bg-primary" id="departure" placeholder="dd.mm.rrrr" >
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row ">
+                                <div class="col-12 col-sm-6 mt-3">
+                                    <button class="btn btn-primary form-control">Book now</button>
+                                </div>
+                                <div class="col-12 col-sm-6 mt-3">
+                                    
+                                    <button type="button"class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Virtual tour</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal -->
+        <section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger">
+                            <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Exploring</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-danger">
+                            <iframe width="460" height="315" src="https://www.youtube.com/embed/eTEtn0HzUTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer bg-danger">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+        
+    </section>
+    
+    <!-- Navigace -->
+    
+            <nav class="navbar sticky-top navbar-expand-lg bg-danger  " data-bs-theme="dark">
+               
+                <div class="container-fluid">
+                <a class="navbar-brand therm" href="#">Thermal Hotel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto  mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#gallery">Galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
+                    </ul>
+                
+                </div>
+                </div>
+            </nav>
+        
+    <!-- konec navigace -->
+    <main>
+        
+        <!-- HISTORY -->
+        
+            <section id="history" class="bg-dark pt-5">
+
+                    <div class="container  pb-5"style="padding-top: 20px;  ">
+                        <div class="row bg-secondary ">
+                            <div class="text-center mb-5">
+                                <h2 class="text-light therm mt-5">History</h2>
+                            </div>
+                        </div>   
+                        
+                        <div class="row bg-secondary ">
+        
+                            <div class=" col-md-6 col-lg-4 text-light ">
+                                <p class="font_1"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem placeat, quibusdam delectus eius voluptatum, aut officia fugit, recusandae officiis rem maiores! Placeat esse veritatis beatae laborum autem. Amet, soluta voluptate!</span><span>Laudantium corporis voluptas asperiores sunt error architecto magnam consectetur et non sequi inventore laborum, iste amet alias perferendis obcaecati consequuntur, placeat ab velit, atque aliquam beatae excepturi. Quas, maxime. Iste.</span><span>Ut dignissimos at veritatis laudantium, explicabo in nulla libero necessitatibus quis non quod eum, eveniet, illum unde porro officia amet incidunt officiis ad. Obcaecati, aliquid repudiandae vero excepturi vitae a?</span><span>Deserunt, porro dolorum? A neque dolorum illo fuga consequuntur asperiores possimus corrupti, et delectus molestiae cumque, quasi autem magni doloribus alias libero iste nisi eligendi animi maiores deleniti labore expedita.</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa expedita ab hic. Corrupti, veritatis vel natus, enim veniam ut unde expedita ad voluptates saepe modi distinctio eum officia quis.</span></p> 
+                            </div> 
+                            <div class=" col-md-6 col-lg-4 text-light">
+                                <p class="font_2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa expedita ab hic. Corrupti, veritatis vel natus, enim veniam ut unde expedita ad voluptates saepe modi distinctio eum officia quis.</span><span>Rem possimus dolore magni tempore esse cumque quod ratione commodi, atque nihil, explicabo non dolor! Iste maiores ad, minus alias atque, culpa consequatur veritatis pariatur natus quisquam minima sunt vero?</span><span>Soluta, labore debitis qui inventore ipsum in aut beatae? Nostrum nam aliquid ducimus. Inventore nam aliquam, atque aliquid modi maxime, blanditiis dolor dolorum voluptas quae alias perferendis, quo placeat. Adipisci?</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa expedita ab hic. Corrupti, veritatis vel natus, enim veniam ut unde expedita ad voluptates saepe modi distinctio eum officia quis.</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa expedita ab hic. Corrupti, veritatis vel natus, enim veniam ut unde expedita ad voluptates saepe modi distinctio eum officia quis.</span></p>
+                            </div>
+                            <div class=" col-md-6 d-none d-md-block  col-lg-4  text-center mb-2"   style="margin:0 auto; max-height:80%;" >
+                            <img src="./Images/hotel_history1.jpg" alt=""  style="width:80%;">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            </section>
+        
+
+        <!-- PRICING -->
+            <section id="pricing" class="bg-dark pt-5">
+                <div class="container pb-3" style="">
+                    <div class="row bg-secondary ">
+                        <div class="text-center mb-4">
+                            <h2 class="text-light therm mt-5">Prices</h2>
+                        </div>
+                    </div>  
+                    
+                    <div class="row bg-secondary" >
+                        <!-- první -->
+                        <div class="col-sm-6 col-lg-3" >
+                            <div class="card mb-4" >
+                                <img src="./Images/room.jpg" class="card-img-top" alt="...">
+                                
+                                <div class="card-body bg-success ">
+                                  <h3 class="card-title text-center text-danger">Economy</h3>
+                                  <table class="table  text-light">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="text-light bg-success">Pers</th>
+                                        <th scope="col" class="text-light bg-success">Night</th>
+                                        <th scope="col" class="text-light bg-success">Week</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">1</th>
+                                        <td class="text-light bg-success">35&euro;</td>
+                                        <td class="text-light bg-success">210&euro;</td>
+                                        
+                                      </tr>
+                                      <tr >
+                                        <th scope="row" class="text-light bg-success">2</th>
+                                        <td class="text-light bg-success">40&euro;</td>
+                                        <td class="text-light bg-success">24&euro;</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">3</th>
+                                        <td class="text-light bg-success">45&euro;</td>
+                                        <td class="text-light bg-success">270&euro;</td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <div class="text-center">
+                                    <a href="#home" class="btn btn-danger text-ligh">Book</a>
+                                      
+                                  </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- druhá -->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card mb-4" >
+                                <img src="./Images/room.jpg" class="card-img-top" alt="...">
+                                
+                                <div class="card-body bg-success ">
+                                  <h3 class="card-title text-center text-danger">Standart</h3>
+                                  <table class="table  text-light">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="text-light bg-success">Pers</th>
+                                        <th scope="col" class="text-light bg-success">Night</th>
+                                        <th scope="col" class="text-light bg-success">Week</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">1</th>
+                                        <td class="text-light bg-success">35&euro;</td>
+                                        <td class="text-light bg-success">210&euro;</td>
+                                        
+                                      </tr>
+                                      <tr >
+                                        <th scope="row" class="text-light bg-success">2</th>
+                                        <td class="text-light bg-success">40&euro;</td>
+                                        <td class="text-light bg-success">24&euro;</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">3</th>
+                                        <td class="text-light bg-success">45&euro;</td>
+                                        <td class="text-light bg-success">270&euro;</td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <div class="text-center">
+    
+                                    <a href="#home" class="btn btn-danger text-ligh">Book</a>
+                                  </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- třetí -->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card mb-4 " >
+                                <img src="./Images/room.jpg" class="card-img-top" alt="...">
+                                
+                                <div class="card-body bg-success ">
+                                  <h3 class="card-title text-center text-danger">Deluxe</h3>
+                                  <table class="table  text-light">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="text-light bg-success">Pers</th>
+                                        <th scope="col" class="text-light bg-success">Night</th>
+                                        <th scope="col" class="text-light bg-success">Week</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">1</th>
+                                        <td class="text-light bg-success">35&euro;</td>
+                                        <td class="text-light bg-success">210&euro;</td>
+                                        
+                                      </tr>
+                                      <tr >
+                                        <th scope="row" class="text-light bg-success">2</th>
+                                        <td class="text-light bg-success">40&euro;</td>
+                                        <td class="text-light bg-success">24&euro;</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">3</th>
+                                        <td class="text-light bg-success">45&euro;</td>
+                                        <td class="text-light bg-success">270&euro;</td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <div class="text-center">
+    
+                                    <a href="#home" class="btn btn-danger text-ligh">Book</a>
+                                  </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- čtvrtá -->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card mb-4" >
+                                <img src="./Images/room.jpg" class="card-img-top" alt="...">
+                                
+                                <div class="card-body bg-success ">
+                                  <h3 class="card-title text-center text-danger">Superior</h3>
+                                  <table class="table  text-light">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="text-light bg-success">Pers</th>
+                                        <th scope="col" class="text-light bg-success">Night</th>
+                                        <th scope="col" class="text-light bg-success">Week</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">1</th>
+                                        <td class="text-light bg-success">35&euro;</td>
+                                        <td class="text-light bg-success">210&euro;</td>
+                                        
+                                      </tr>
+                                      <tr >
+                                        <th scope="row" class="text-light bg-success">2</th>
+                                        <td class="text-light bg-success">40&euro;</td>
+                                        <td class="text-light bg-success">24&euro;</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="text-light bg-success">3</th>
+                                        <td class="text-light bg-success">45&euro;</td>
+                                        <td class="text-light bg-success">270&euro;</td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <div class="text-center">
+    
+                                    <a href="#home" class="btn btn-danger text-ligh">Book</a>
+                                  </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+
+        <!-- GALLERY -->
+        <section id="gallery" class="bg-dark pt-5">
+            
+                <div class="container galerie" style="">
+                    <div class="row bg-secondary ">
+                        <div class="text-center mb-5">
+                            <h2 class="text-light therm mt-5">Gallery</h2>
+                        </div>
+                    </div>  
+                    
+                    <div class="row bg-secondary car_radek" >
+    
+                        <div class="karusel">
+                            <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner mb-5">
+                                  <div class="carousel-item active d-flex justify-content-center">
+
+                                    
+                                    <img src="./Images/images1.jpg" class=" w-75 "  alt="..." style="max-height: 400px;">
+                                    <div class="carousel-caption  d-md-block">
+                                      <h5>Jídelna 1</h5>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item d-flex justify-content-center">
+                                    <img src="./Images/images2.jpg" class="d-block w-75 " alt="..." style="max-height:400px;">
+                                    <div class="carousel-caption  d-md-block">
+                                      <h5>Zámek 2</h5>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item  d-flex justify-content-center  ">
+                                    <img src="./Images/images3.jpg" class="d-block w-75 " alt="..." style="max-height:400px;">
+                                    <div class="carousel-caption  d-md-block">
+                                      <h5 class="text-dark">Bazén 3</h5>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="bg-dark pt-5">
+                    <div class="container " style="padding-top: 60px; padding-bottom: 60px;">
+                        <div class="row bg-secondary ">
+                            <div class="text-center mb-5">
+                                <h2 class="text-light therm mt-4">Contact us</h2>
+                            </div>
+                        </div>  
+                        
+                        <div class="row bg-secondary pb-3 " >
+                            <div class="col-lg-4 col-sm-6 ">
+                                <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=karlovy%20vary+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
+                            </div>
+                            <div class="col-lg-4  col-sm-6 text-center ">
+                                <div class="row">
+                                    <a href="#"> 
+                                        <i class="bi bi-facebook" style="font-size: 5rem; color: rgb(231, 80, 105);"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="row">
+                                    <a href="#"> 
+                                        <i class="bi bi-twitter-x"style="font-size: 5rem; color: rgb(231, 80, 105);"></i>
+                                        
+                                    </a>
+                                </div>
+    
+                                <div class="row">
+                                    <a href="#"> 
+                                        <i class="bi bi-instagram" style="font-size: 5rem; color: rgb(231, 80, 105);"></i>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 text-center  m-auto">
+                                <div class="row">
+                                    <i class="bi bi-telephone-fill" style="font-size: 2rem; color: rgb(226, 217, 217);"></i>
+                                </div>
+    
+                                <div class="row">
+                                    <p  style="color: rgb(226, 217, 217); font-size: 1.3rem;">+12345678922</p>
+                                </div>
+    
+                                <div class="row">
+                                    <i class="bi bi-envelope-at" style="font-size: 2rem; color: rgb(226, 217, 217);"></i>
+                                    
+                                </div>
+    
+                                <div class="row">
+                                    <p  style="color: rgb(226, 217, 217); font-size: 1.3rem;">+candyhills@hotels.at</p>
+                                </div>
+    
+                                <div class="row">
+                                    <i class="bi bi-house-door" style="font-size: 2rem; color: rgb(226, 217, 217);"></i>                                   
+                                </div>
+    
+                                <div class="row">
+                                    <p  style="color: rgb(226, 217, 217); font-size: 1.3rem;">Karlovy Vary<br> Osvobození 4463<br> Česká republika</p>
+                                </div>
+    
+                            </div>
+                            
+                        </div>
+                    </div>
+        </section>
+    </main>
+
+
+    
+
+    <footer>
+        <section>
+            <div class="container">
+
+            </div>
+        </section>
+    </footer>
+    
+
+
+
+
+
+    
+
+    <!-- Script Navbar -->
+
+     <!-- Script -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <!-- <script src="bootstrap.bundle.min.js"></script> -->
+     <script>
+       document.addEventListener("DOMContentLoaded", function () {
+         //navbar
+         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+         const navbarToggler = document.querySelector(".navbar-toggler");
+         const collapseNavbar = function () {
+           // Ověříme, zda je navigační menu v rozbalovacím režimu
+           if (window.innerWidth < 992) {
+             const bsCollapse = new bootstrap.Collapse(
+               navbarToggler.nextElementSibling,
+               {
+                 toggle: false,
+               }
+             );
+             bsCollapse.hide();
+           }
+         };
+ 
+         navLinks.forEach(function (link) {
+           link.addEventListener("click", collapseNavbar);
+         });
+ 
+         //Vysvětlení:
+         // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně
+         // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element,
+         // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element
+         // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci
+         // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
+ 
+         //modal
+         document.querySelectorAll(".modal").forEach(function (modal) {
+           modal.addEventListener("hide.bs.modal", function () {
+             const memory = this.innerHTML;
+             this.innerHTML = memory;
+           });
+         });
+       });
+       //Vysvětlení:
+       // document.querySelectorAll('.modal').forEach(function(modal) {...}):
+       // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.
+       // modal.addEventListener('hide.bs.modal', function() {...}): Přidává posluchače událostí pro každé modální okno,
+       // který reaguje na událost hide.bs.modal - událost specifickou pro Bootstrap, která nastane, když se modální okno začíná skrývat.
+       // var memory = this.innerHTML; this.innerHTML = memory;: Ukládá aktuální HTML obsah modálního okna do proměnné memory a
+       // poté ho okamžitě nastavuje zpět. Toto zachovává aktuální stav modálního okna, i když je skryto.
+     </script>
+     <script>
+       function scrollToSection(sectionId) {
+         var section = document.getElementById(sectionId);
+         if (section) {
+           section.scrollIntoView({ behavior: "smooth" });
+         }
+       }
+     </script>
+     <!-- /Script -->
+    <!-- SCRIPT -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

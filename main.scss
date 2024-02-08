@@ -1,0 +1,86 @@
+// Variable overrides first
+$primary: rgb(20, 216, 197);
+// $enable-shadows: true;
+// $prefix: "mo-";
+$danger:rgb(204, 27, 57);
+
+// Then import Bootstrap
+$success:rgb(12, 183, 112);
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+#home  {
+    min-height: 92vh;
+    background-image: url(./Images/hotelthermal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // border: 2px solid red;
+}
+
+form label {
+    color: white;
+}
+
+form  {
+    background: rgb(0, 0, 0,0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#history {
+    min-height: 100vh;
+    width: 100%;
+        
+}
+
+#pricing {
+    min-height: 100vh;
+}
+
+#gallery {
+    max-height: 100vh;
+}
+
+.galerie {
+    
+    height: 100vh;
+    
+    padding: 20px;
+}
+
+.car_radek {
+    
+    height: 80%;
+    
+
+}
+
+#contact {
+    
+    min-height: 100vh;
+    width: 100%; 
+    
+}
+
+.therm  {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+  .font_1 {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .font_2 {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  label {
+    font-weight: bold;
+  }
