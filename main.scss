@@ -1,11 +1,11 @@
 // Variable overrides first
-$primary: rgb(20, 216, 197);
+$primary: rgb(66, 235, 218);
 // $enable-shadows: true;
 // $prefix: "mo-";
-$danger:rgb(204, 27, 57);
+$danger:rgb(230, 38, 182);
 
 // Then import Bootstrap
-$success:rgb(12, 183, 112);
+$success:rgb(45, 209, 113);
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
 #home  {
@@ -22,9 +22,9 @@ form label {
 }
 
 form  {
-    background: rgb(0, 0, 0,0.1);
+    background: rgb(0, 0, 0,0.4);
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 #history {
